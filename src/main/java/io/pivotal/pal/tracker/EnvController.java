@@ -39,3 +39,6 @@ public class EnvController {
         return env;
     }
 }
+
+
+fly -t pal-concourse set-pipeline --config ci/pipeline.yml --pipeline pal-tracker-MihirR --load-vars-from ci/variables.yml
