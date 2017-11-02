@@ -6,7 +6,7 @@ image_resource:
     repository: openjdk
     tag: '8-jdk'
 
-imputs:
+inputs:
   - name: pal-tracker
 
 outputs:
