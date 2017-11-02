@@ -70,7 +70,7 @@ public class TimeEntryControllerTest {
         );
         doReturn(expected).when(timeEntryRepository).list();
 
-        ResponseEntity<List<TimeEntry>> response = controller.list();
+        ResponseEntity<List<TimeEntry>> response = controller.list() ;
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isEqualTo(expected);
     }
