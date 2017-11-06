@@ -4,4 +4,4 @@ applications:
   path: build/libs/pal-tracker.jar
   host: mr-pal-tracker
   env:
-  SECURITY_FORCE_HTTPS: true
+    SECURITY_FORCE_HTTPS: true
