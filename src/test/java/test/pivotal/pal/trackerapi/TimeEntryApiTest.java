@@ -42,6 +42,7 @@ public class TimeEntryApiTest {
         jdbcTemplate.execute("TRUNCATE time_entries");
     }
 
+
     @Test
     public void testCreate() throws Exception {
         ResponseEntity<String> createResponse = restTemplate.postForEntity("/time-entries", timeEntry, String.class);
@@ -135,4 +136,6 @@ public class TimeEntryApiTest {
 
         return response.getBody().getId();
     }
+
+
 }
